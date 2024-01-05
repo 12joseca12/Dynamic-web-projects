@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Venta Vehículos</title>
+<style type="text/css">
+     @import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Quantico&display=swap');
+
+        body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(251,179,33);
+    background: linear-gradient(162deg, rgba(251,179,33,0.8352591036414566) 10%, rgba(255,12,12,0.8352591036414566) 89%);
+}
+
+h1{
+    font-family: 'Audiowide', sans-serif;
+    font-size: 2.5em;
+    line-height: 2;
+}
+
+nav ul li a{
+  text-decoration: none;
+  font-family: 'Audiowide', sans-serif;
+  color: black;
+  font-size: 1.25em;
+  border: 2px solid black;
+  padding: 40px 68px;
+  border-radius:15px;
+}
+
+
+
+nav ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+nav li {
+    width: 20rem;
+    height: 7rem;
+    font-size: 20px;
+    text-align: center;
+    line-height: 7rem;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    position: relative;
+    transition: 0.3s;
+    margin: 3rem;
+}
+
+nav li::before,
+nav li::after {
+    content: '';
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    top: 0;
+    left: 0;
+    transition: 0.3s;
+}
+
+nav li::before {
+    background-color: white;
+    z-index: -1;
+    box-shadow: 0.2rem 0.2rem 0.5rem rgba(0, 0, 0, 0.2);
+    border-radius:15px;
+}
+
+nav li::after {
+    background-color: rgb(255, 249, 128);
+    transform: translate(1.5rem, 1.5rem);
+    z-index: -2;
+    border-radius:15px;
+}
+
+nav li:hover {
+    transform: translate(1.5rem, 1.5rem);
+    color: white;
+    border-radius:15px;
+}
+
+nav li:hover::before {
+    background-color: rgb(255, 249, 128);
+    border-radius:15px;
+}
+
+nav li:hover::after {
+    background-color: white;
+    transform: translate(-1.5rem, -1.5rem);
+    border-radius:15px;
+}
+
+</style>
+</head>
+<body>
+<h1>PROYECTO DESPLIEGUE <br>JOSÉ CARLOS SÁNCHEZ GARCÍA</h1>
+<nav>
+  <ul>
+    <li><a href="controladorModelos">ADELANTE!!</a></li>
+  </ul>
+</nav>
+</body>
+</html>
