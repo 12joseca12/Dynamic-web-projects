@@ -1,0 +1,21 @@
+version: '3'
+
+services:
+  # Configuracion para el contenedor de Tomcat
+  tomcat:
+    build:
+      context: C:\Users\sanch\Desktop\jcsgcrud
+      dockerfile: C:\Users\sanch\Desktop\jcsgcrud\Dockerfile
+    ports:
+      - "8080:8080"
+    depends_on:
+      - mysql
+
+  # Configuración para el contenedor de MySQL
+  mysql:
+    image: mysql:latest
+    environment:
+      MYSQL_ROOT_PASSWORD: "root"
+      MYSQL_DATABASE: jcsgcoches
+    ports:
+      - "3306:3306"
